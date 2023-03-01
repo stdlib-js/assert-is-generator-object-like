@@ -24,14 +24,30 @@ limitations under the License.
 
 > Test if a value is [`generator`][mdn-generator-object] object-like.
 
+<section class="installation">
 
+## Installation
+
+```bash
+npm install @stdlib/assert-is-generator-object-like
+```
+
+Alternatively,
+
+-   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm` branch][esm-url].
+-   If you are using Deno, visit the [`deno` branch][deno-url].
+-   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd` branch][umd-url].
+
+The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
+
+</section>
 
 <section class="usage">
 
 ## Usage
 
 ```javascript
-import isGeneratorObjectLike from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-generator-object-like@deno/mod.js';
+var isGeneratorObjectLike = require( '@stdlib/assert-is-generator-object-like' );
 ```
 
 #### isGeneratorObjectLike( value )
@@ -64,8 +80,8 @@ bool = isGeneratorObjectLike( {} );
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-import noop from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-noop@deno/mod.js';
-import isGeneratorObjectLike from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-generator-object-like@deno/mod.js';
+var noop = require( '@stdlib/utils-noop' );
+var isGeneratorObjectLike = require( '@stdlib/assert-is-generator-object-like' );
 
 var obj = {
     'next': noop,
@@ -97,8 +113,8 @@ bool = isGeneratorObjectLike( null );
 
 ## See Also
 
--   <span class="package-name">[`@stdlib/assert/has-generator-support`][@stdlib/assert/has-generator-support]</span><span class="delimiter">: </span><span class="description">detect native generator function support.</span>
--   <span class="package-name">[`@stdlib/assert/is-generator-object`][@stdlib/assert/is-generator-object]</span><span class="delimiter">: </span><span class="description">test if a value is a generator object.</span>
+-   <span class="package-name">[`@stdlib/assert-has-generator-support`][@stdlib/assert/has-generator-support]</span><span class="delimiter">: </span><span class="description">detect native generator function support.</span>
+-   <span class="package-name">[`@stdlib/assert-is-generator-object`][@stdlib/assert/is-generator-object]</span><span class="delimiter">: </span><span class="description">test if a value is a generator object.</span>
 
 </section>
 
@@ -113,7 +129,7 @@ bool = isGeneratorObjectLike( null );
 
 ## Notice
 
-This package is part of [stdlib][stdlib], a standard library with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
+This package is part of [stdlib][stdlib], a standard library for JavaScript and Node.js, with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
 
 For more information on the project, filing bug reports and feature requests, and guidance on how to develop [stdlib][stdlib], see the main project [repository][stdlib].
 
@@ -177,9 +193,9 @@ Copyright &copy; 2016-2023. The Stdlib [Authors][stdlib-authors].
 
 <!-- <related-links> -->
 
-[@stdlib/assert/has-generator-support]: https://github.com/stdlib-js/assert-has-generator-support/tree/deno
+[@stdlib/assert/has-generator-support]: https://github.com/stdlib-js/assert-has-generator-support
 
-[@stdlib/assert/is-generator-object]: https://github.com/stdlib-js/assert-is-generator-object/tree/deno
+[@stdlib/assert/is-generator-object]: https://github.com/stdlib-js/assert-is-generator-object
 
 <!-- </related-links> -->
 
