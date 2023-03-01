@@ -113,8 +113,8 @@ bool = isGeneratorObjectLike( null );
 
 ## See Also
 
--   <span class="package-name">[`@stdlib/assert/has-generator-support`][@stdlib/assert/has-generator-support]</span><span class="delimiter">: </span><span class="description">detect native generator function support.</span>
--   <span class="package-name">[`@stdlib/assert/is-generator-object`][@stdlib/assert/is-generator-object]</span><span class="delimiter">: </span><span class="description">test if a value is a generator object.</span>
+-   <span class="package-name">[`@stdlib/assert-has-generator-support`][@stdlib/assert/has-generator-support]</span><span class="delimiter">: </span><span class="description">detect native generator function support.</span>
+-   <span class="package-name">[`@stdlib/assert-is-generator-object`][@stdlib/assert/is-generator-object]</span><span class="delimiter">: </span><span class="description">test if a value is a generator object.</span>
 
 </section>
 
