@@ -24,38 +24,30 @@ limitations under the License.
 
 > Test if a value is [`generator`][mdn-generator-object] object-like.
 
+<section class="installation">
 
+## Installation
+
+```bash
+npm install @stdlib/assert-is-generator-object-like
+```
+
+Alternatively,
+
+-   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm` branch][esm-url].
+-   If you are using Deno, visit the [`deno` branch][deno-url].
+-   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd` branch][umd-url].
+
+The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
+
+</section>
 
 <section class="usage">
 
 ## Usage
 
-To use in Observable,
-
 ```javascript
-isGeneratorObjectLike = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-generator-object-like@umd/browser.js' )
-```
-
-To vendor stdlib functionality and avoid installing dependency trees for Node.js, you can use the UMD server build:
-
-```javascript
-var isGeneratorObjectLike = require( 'path/to/vendor/umd/assert-is-generator-object-like/index.js' )
-```
-
-To include the bundle in a webpage,
-
-```html
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-generator-object-like@umd/browser.js"></script>
-```
-
-If no recognized module system is present, access bundle contents via the global scope:
-
-```html
-<script type="text/javascript">
-(function () {
-    window.isGeneratorObjectLike;
-})();
-</script>
+var isGeneratorObjectLike = require( '@stdlib/assert-is-generator-object-like' );
 ```
 
 #### isGeneratorObjectLike( value )
@@ -87,14 +79,9 @@ bool = isGeneratorObjectLike( {} );
 
 <!-- eslint no-undef: "error" -->
 
-```html
-<!DOCTYPE html>
-<html lang="en">
-<body>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/utils-noop@umd/browser.js"></script>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-generator-object-like@umd/browser.js"></script>
-<script type="text/javascript">
-(function () {
+```javascript
+var noop = require( '@stdlib/utils-noop' );
+var isGeneratorObjectLike = require( '@stdlib/assert-is-generator-object-like' );
 
 var obj = {
     'next': noop,
@@ -112,11 +99,6 @@ bool = isGeneratorObjectLike( [] );
 
 bool = isGeneratorObjectLike( null );
 // returns false
-
-})();
-</script>
-</body>
-</html>
 ```
 
 </section>
@@ -131,8 +113,8 @@ bool = isGeneratorObjectLike( null );
 
 ## See Also
 
--   <span class="package-name">[`@stdlib/assert/has-generator-support`][@stdlib/assert/has-generator-support]</span><span class="delimiter">: </span><span class="description">detect native generator function support.</span>
--   <span class="package-name">[`@stdlib/assert/is-generator-object`][@stdlib/assert/is-generator-object]</span><span class="delimiter">: </span><span class="description">test if a value is a generator object.</span>
+-   <span class="package-name">[`@stdlib/assert-has-generator-support`][@stdlib/assert/has-generator-support]</span><span class="delimiter">: </span><span class="description">detect native generator function support.</span>
+-   <span class="package-name">[`@stdlib/assert-is-generator-object`][@stdlib/assert/is-generator-object]</span><span class="delimiter">: </span><span class="description">test if a value is a generator object.</span>
 
 </section>
 
@@ -211,9 +193,9 @@ Copyright &copy; 2016-2023. The Stdlib [Authors][stdlib-authors].
 
 <!-- <related-links> -->
 
-[@stdlib/assert/has-generator-support]: https://github.com/stdlib-js/assert-has-generator-support/tree/umd
+[@stdlib/assert/has-generator-support]: https://github.com/stdlib-js/assert-has-generator-support
 
-[@stdlib/assert/is-generator-object]: https://github.com/stdlib-js/assert-is-generator-object/tree/umd
+[@stdlib/assert/is-generator-object]: https://github.com/stdlib-js/assert-is-generator-object
 
 <!-- </related-links> -->
 
