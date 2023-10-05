@@ -39,7 +39,7 @@
   "dependencies": {},
   "devDependencies": {
     "@stdlib/assert-has-generator-support": "^0.1.0",
-    "@stdlib/assert-is-boolean": "^0.1.0",
+    "@stdlib/assert-is-boolean": "^0.1.1",
     "@stdlib/bench": "^0.1.0",
     "@stdlib/utils-eval": "^0.1.1",
     "@stdlib/utils-noop": "^0.1.1",
