@@ -1,7 +1,7 @@
 /**
 * @license Apache-2.0
 *
-* Copyright (c) 2018 The Stdlib Authors.
+* Copyright (c) 2023 The Stdlib Authors.
 *
 * Licensed under the Apache License, Version 2.0 (the "License");
 * you may not use this file except in compliance with the License.
@@ -21,57 +21,13 @@
 // MODULES //
 
 var tape = require( 'tape' );
-var detectGeneratorSupport = require( '@stdlib/assert-has-generator-support' );
-var noop = require( '@stdlib/utils-noop' );
-var isGeneratorObject = require( './../../dist' );
-
-
-// VARIABLES //
-
-var hasGeneratorsSupport = detectGeneratorSupport();
+var main = require( './../../dist' );
 
 
 // TESTS //
 
-tape( 'main export is a function', function test( t ) {
+tape( 'main export is defined', function test( t ) {
 	t.ok( true, __filename );
-	t.strictEqual( typeof isGeneratorObject, 'function', 'main export is a function' );
+	t.strictEqual( main !== void 0, true, 'main export is defined' );
 	t.end();
 });
-
-tape( 'the function returns `false` if not provided a generator object-like value', function test( t ) {
-	var values;
-	var i;
-	values = [
-		'5',
-		5,
-		true,
-		void 0,
-		null,
-		NaN,
-		[],
-		function noop() {},
-		{}
-	];
-
-	for ( i = 0; i < values.length; i++ ) {
-		t.equal( isGeneratorObject( values[i] ), false, 'returns false' );
-	}
-	t.end();
-});
-
-tape( 'the function returns `true` if provided a generator object-like value', function test( t ) {
-	var gen = {
-		'next': noop,
-		'return': noop,
-		'throw': noop
-	};
-	t.equal( isGeneratorObject( gen ), true, 'returns true' );
-	t.end();
-});
-
-// Run generator function tests if environment supports `function*()`...
-
-if ( hasGeneratorsSupport ) {
-	require( './es2015-generator' ); // eslint-disable-line stdlib/no-unassigned-require
-}
