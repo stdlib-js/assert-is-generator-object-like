@@ -22,7 +22,7 @@
 
 // MODULES //
 
-var bench = require( '@stdlib/bench' );
+var bench = require( '@stdlib/bench-harness' );
 var evil = require( '@stdlib/utils-eval' );
 var isBoolean = require( '@stdlib/assert-is-boolean' ).isPrimitive;
 var hasGeneratorsSupport = require( '@stdlib/assert-has-generator-support' );
