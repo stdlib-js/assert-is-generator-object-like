@@ -42,7 +42,7 @@ limitations under the License.
 ## Usage
 
 ```javascript
-import isGeneratorObjectLike from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-generator-object-like@esm/index.mjs';
+import isGeneratorObjectLike from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-generator-object-like@v0.2.0-esm/index.mjs';
 ```
 
 #### isGeneratorObjectLike( value )
@@ -81,7 +81,7 @@ bool = isGeneratorObjectLike( {} );
 <script type="module">
 
 import noop from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-noop@esm/index.mjs';
-import isGeneratorObjectLike from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-generator-object-like@esm/index.mjs';
+import isGeneratorObjectLike from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-generator-object-like@v0.2.0-esm/index.mjs';
 
 var obj = {
     'next': noop,
