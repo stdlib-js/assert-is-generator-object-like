@@ -1,6 +1,6 @@
 {
   "name": "@stdlib/assert-is-generator-object-like",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "description": "Test if a value is generator object-like.",
   "license": "Apache-2.0",
   "author": {
@@ -40,8 +40,8 @@
   "devDependencies": {
     "@stdlib/assert-has-generator-support": "^0.2.1",
     "@stdlib/assert-is-boolean": "^0.2.1",
-    "@stdlib/utils-eval": "^0.2.1",
-    "@stdlib/utils-noop": "^0.2.1",
+    "@stdlib/utils-eval": "^0.2.2",
+    "@stdlib/utils-noop": "^0.2.2",
     "tape": "git+https://github.com/kgryte/tape.git#fix/globby",
     "istanbul": "^0.4.1",
     "tap-min": "git+https://github.com/Planeshifter/tap-min.git",
