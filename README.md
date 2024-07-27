@@ -42,6 +42,11 @@ limitations under the License.
 ## Usage
 
 ```javascript
+import isGeneratorObjectLike from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-generator-object-like@esm/index.mjs';
+```
+The previous example will load the latest bundled code from the esm branch. Alternatively, you may load a specific version by loading the file from one of the [tagged bundles](https://github.com/stdlib-js/assert-is-generator-object-like/tags). For example,
+
+```javascript
 import isGeneratorObjectLike from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-generator-object-like@v0.2.2-esm/index.mjs';
 ```
 
@@ -81,7 +86,7 @@ bool = isGeneratorObjectLike( {} );
 <script type="module">
 
 import noop from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-noop@esm/index.mjs';
-import isGeneratorObjectLike from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-generator-object-like@v0.2.2-esm/index.mjs';
+import isGeneratorObjectLike from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-generator-object-like@esm/index.mjs';
 
 var obj = {
     'next': noop,
